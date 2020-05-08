@@ -387,9 +387,9 @@ streamline <- function(field, dt = 0.1, S = 3, skip.x = 1, skip.y = 1, nx = NULL
 
     is.grid <- with(field, .is.regular_grid(x, y))
 
-    if (!is.grid) {
-      stop("x and y do not define a regular grid")
-    }
+#    if (!is.grid) {
+#      stop("x and y do not define a regular grid")
+#    }
 
     data.table::setorder(field, x, y)
 
